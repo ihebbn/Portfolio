@@ -1,44 +1,35 @@
-import { IconType } from 'react-icons'
+import { IconBaseProps, IconType } from 'react-icons'
 import {
-  SiDotNet,
-  SiJavascript,
-  SiTypescript,
-  SiNodeDotJs,
+  SiDotnet,
   SiGraphql,
   SiApollographql,
-  SiPhp,
-  SiReact,
-  SiNextDotJs,
   SiRedux,
-  SiStyledComponents,
-  SiGhost,
-  SiVueDotJs,
+  SiStyledcomponents,
   SiDocker,
   SiGooglecloud,
   SiCpanel,
   SiRancher,
   SiGitlab,
   SiPostgresql,
-  SiMicrosoftsqlserver,
   SiMysql,
   SiMongodb,
   SiRedis,
-  SiSocketDotIo,
-  SiMaterialUi,
+  SiMaterialformkdocs ,
   SiFramer,
   SiGit,
-  SiGnubash,
-  SiVisualstudiocode,
   SiUnity,
-  SiMicrosoft,
   SiElectron,
   SiSpring,
+  SiNodedotjs,
   SiAngular,
 } from 'react-icons/si'
 import { BsQuestionSquare } from 'react-icons/bs'
 import { AiOutlineAntDesign } from 'react-icons/ai'
 import { FaSourcetree } from 'react-icons/fa'
-import { IoLogoPwa } from 'react-icons/io5'
+import { DiVisualstudio } from 'react-icons/di' 
+import { TfiMicrosoftAlt} from 'react-icons/tfi'
+
+
 
 export type SkillCategory =
   | 'backend'
@@ -70,11 +61,11 @@ export const Skills: {
     
     {
       name: 'C# - .NET.Core',
-      icon: SiDotNet,
+      icon: SiDotnet,
     },
     {
       name: 'Node',
-      icon: SiNodeDotJs,
+      icon: SiNodedotjs,
     },
     /* {
       name: 'Javascript (ES6+)',
@@ -97,7 +88,7 @@ export const Skills: {
     },
     {
       name: 'NextJS',
-      icon: SiNextDotJs,
+      icon: SiNodedotjs,
     },
     {
       name: 'Apollo Graphql',
@@ -163,7 +154,7 @@ export const Skills: {
   'ui frameworks': [
     {
       name: 'Styled Components',
-      icon: SiStyledComponents,
+      icon: SiStyledcomponents,
     },
     {
       name: 'AntDesign',
@@ -171,7 +162,7 @@ export const Skills: {
     },
     {
       name: 'MaterialUI',
-      icon: SiMaterialUi,
+      icon: SiMaterialformkdocs,
     },
     {
       name: 'Framer Motion',
@@ -182,7 +173,7 @@ export const Skills: {
   'productivity boost': [
     {
       name: 'VSCode',
-      icon: SiVisualstudiocode,
+      icon: DiVisualstudio,
     },
     {
       name: 'Git',
@@ -215,7 +206,7 @@ export const Skills: {
   desktop: [
     {
       name: 'Windows Forms, WPF',
-      icon: SiMicrosoft,
+      icon: TfiMicrosoftAlt,
     },
     {
       name: 'Electron',
@@ -243,3 +234,7 @@ export const splitSkills = (srcArray: Skill[]) => {
   }
   return temporary
 }
+function SiNodedotJs(props: IconBaseProps): Element {
+  throw new Error('Function not implemented.')
+}
+

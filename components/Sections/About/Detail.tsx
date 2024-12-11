@@ -16,8 +16,8 @@ import {
   SiSpring,
   SiGraphql,
   SiReact,
-  SiNextDotJs,
-  SiNodeDotJs,
+  SiNextdotjs,
+  SiNodedotjs,
   SiDocker,
   SiPostgresql,
   SiBt,
@@ -80,7 +80,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             GraphQL
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNodeDotJs} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiNodedotjs} color={emphasis} fontSize="2em" />
             Node.js
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
@@ -94,7 +94,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             Angular
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNextDotJs} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiNextdotjs} color={emphasis} fontSize="2em" />
             Next.js
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
