@@ -18,27 +18,14 @@ import {
 } from '@chakra-ui/react'
 import styles from './styles.module.css'
 import { Skill, Skills, splitSkills } from 'config/skills'
-import {
-  SiSymfony,
-  SiDotNet,
-  SiDjango,
-  SiStrapi,
-  SiMongodb,
-  SiBt,
-  SiNpm,
-  SiOpenid,
-  SiDocker,
-  SiJenkins,
-  SiIonic,
-  SiStyledComponents,
-  SiMaterialUi,
-  SiFramer,
-  SiGit,
-  SiVisualstudiocode,
-  AiOutlineAntDesign,
-  FaSourcetree,
-  BsQuestionSquare,
-} from 'react-icons/all'
+import { SiSymfony, SiDotNet, SiDjango, SiStrapi, SiMongodb } from 'react-icons/si';
+import { SiBt, SiNpm, SiOpenid, SiDocker, SiJenkins } from 'react-icons/si';
+import { SiIonic, SiStyledComponents, SiMaterialUi, SiFramer } from 'react-icons/si';
+import { SiGit, SiVisualstudiocode } from 'react-icons/si';
+import { AiOutlineAntDesign } from 'react-icons/ai';
+import { FaSourcetree } from 'react-icons/fa';
+import { BsQuestionSquare } from 'react-icons/bs';
+
 
 type ISkillSetModal = {
   isOpen: boolean
