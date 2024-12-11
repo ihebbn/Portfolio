@@ -1,47 +1,47 @@
 import {
   extendTheme,
   ColorMode,
+  GlobalStyle,
   ChakraTheme,
   ThemeComponentProps,
-} from '@chakra-ui/react'
-import { mode } from '@chakra-ui/theme-tools'
+} from '@chakra-ui/react';
+import { GlobalStyleProps, mode } from '@chakra-ui/theme-tools';
 
 interface IThemeMode {
-  Light: ColorMode
-  Dark: ColorMode
+  Light: ColorMode;
+  Dark: ColorMode;
 }
 
 export const ThemeMode: IThemeMode = {
   Light: 'light',
   Dark: 'dark',
-}
+};
 
 export const mobileBreakpointsMap = {
   base: true,
   md: true,
   lg: true,
   xl: false,
-}
+};
 
 // Theme Config
 const config = {
   initialColorMode: ThemeMode.Dark,
   useSystemColorMode: false,
-}
+};
 
 const colors = {
   black: '#121212',
-}
+};
 
 const styles = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  global: (props: any) => ({
+  global: (props: GlobalStyleProps) => ({
     body: {
       color: mode('gray.800', 'whiteAlpha.900')(props),
       bg: mode('gray.100', '#121212')(props),
     },
   }),
-}
+};
 
 const textVariants = {
   emphasis: (props: ThemeComponentProps<ChakraTheme>) => ({
@@ -56,7 +56,7 @@ const textVariants = {
   accentAlternative: (props: ThemeComponentProps<ChakraTheme>) => ({
     color: mode('#595959', '#A6A6A6')(props),
   }),
-}
+};
 
 const theme = extendTheme({
   config,
@@ -67,7 +67,7 @@ const theme = extendTheme({
   styles,
   components: {
     Link: {
-      baseStyle: (props) => ({
+      baseStyle: (props: ThemeComponentProps<ChakraTheme>) => ({
         color: mode('teal.500', 'cyan.200')(props),
       }),
       variants: {
@@ -89,10 +89,10 @@ const theme = extendTheme({
     },
     Button: {
       variants: {
-        outline: (props) => ({
+        outline: (props: ThemeComponentProps<ChakraTheme>) => ({
           borderColor: mode('black.400', 'cyan.200')(props),
         }),
-        outlineAlternative: (props) => ({
+        outlineAlternative: (props: ThemeComponentProps<ChakraTheme>) => ({
           borderWidth: '1px',
           borderRadius: 0,
           borderColor: mode('#595959', 'whiteAlpha.500')(props),
@@ -107,14 +107,14 @@ const theme = extendTheme({
     },
     Icon: {
       variants: {
-        accent: (props) => ({
+        accent: (props: ThemeComponentProps<ChakraTheme>) => ({
           borderColor: mode('gray.800', 'gray.400')(props),
         }),
       },
     },
     Divider: {
       variants: {
-        solid: (props) => ({
+        solid: (props: ThemeComponentProps<ChakraTheme>) => ({
           borderColor: mode('gray.800', 'gray.400')(props),
           marginLeft: 'auto',
           marginRight: 'auto',
@@ -122,5 +122,6 @@ const theme = extendTheme({
       },
     },
   },
-})
-export default theme
+});
+
+export default theme;
