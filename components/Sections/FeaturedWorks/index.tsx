@@ -44,10 +44,9 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={1}
-            title="Tobira!"
-            src="/works/tobira/IphoneX-tobira.webp"
-            description="Japanese social media platform for travelers to show off their
-          adventure to the world. I was incharge of Front end integration, made using React, Antd and Styled Components."
+            title="IntraConnect Pro!"
+            src="/works/tobira/Project2.png"
+            description="An integrated enterprise management platform designed to streamline HR and recruitment processes. This platform features advanced leave management, document requests, CV Scoring management modules, and an intelligent AI-powered chatbot for quick access to company data."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://tobira-app-test.netlify.app/"
             objectPosition="right 20%"
@@ -70,9 +69,9 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={3}
-            title="Agora School"
-            description="A quizz - reviewer LMS, I made as a freelancer. Backend were powered by PHPSlim and VueJS for Front end."
-            src="/works/agora.webp"
+            title="Esprit University"
+            description="Web application for Esprit University, enabling efficient event management, student registration, and academic information handling. Backend powered by Spring Boot and Angular for Front end."
+            src="/works/e.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://dev.agora-school.com"
             objectPosition="right 20%"
@@ -83,11 +82,11 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={4}
-            title="TMH Layla EC"
-            description="A Japanese Semi-conductor e-commerce made at my old place at IVP. I was working with backend using ASP.NET MVC"
-            src="/works/tmh.webp"
+            title=" Ecwid EC"
+            description="Developed a scalable e-commerce platform as a freelancer to enhance online shopping experiences. Integrated secure payment gateways, real-time order tracking, and a robust product management system. Built using Python (Django) for the backend and React for the frontend, ensuring a seamless and user-friendly interface."
+            src="/works/pr.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://www.layla-ec.com/"
+            ctaUrl="https://www.ecwid.com/"
             isMobile={isMobile}
           />
         </MotionGridItem>
