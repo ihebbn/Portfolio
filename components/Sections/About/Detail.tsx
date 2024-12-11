@@ -13,14 +13,15 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import {
-  SiDotNet,
-  SiJavascript,
-  SiTypescript,
+  SiJava,
+  SiSpring,
   SiGraphql,
   SiReact,
   SiNextDotJs,
   SiNodeDotJs,
   SiDocker,
+  SiPostgresql,
+  SiBt,
 } from 'react-icons/si'
 import { GiCoffeePot } from 'react-icons/gi'
 import { IoMdOpen } from 'react-icons/io'
@@ -31,8 +32,6 @@ type ISkillSetModal = {
 
 const Detail = ({ onOpen }: ISkillSetModal) => {
   const emphasis = useColorModeValue('teal.500', 'cyan.200')
-  const currentYear = new Date().getFullYear()
-  const professionalYears = currentYear - 2016
 
   return (
     <Stack
@@ -48,72 +47,62 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
           fontVariantCaps: 'small-caps',
         }}
       >
-        What i do.
+        What I Do
       </Heading>
       <Text variant="description">
-        I`ve been coding professionally for {professionalYears} years now and
-        currently working as a <b>Software Engineer</b> that focuses on{' '}
-        <b>architecture</b>, <b>APIs</b>,{' '}
+        I am a passionate <b>Full-Stack Software Engineer</b> with a strong focus on
+        building scalable, efficient, and user-friendly solutions. My journey has
+        taken me through developing enterprise-grade applications, integrating
+        AI-powered features, and creating engaging user interfaces. Currently, I
+        specialize in <b>backend systems</b>, <b>microservices architecture</b>,
+        and <b>full-stack development</b>. Here are a few technologies that make up my{' '}
         <Tooltip
-          label="Ha!. Or more accurately TECH DEBT"
-          aria-label="Tech Debt?"
+          label="Definitely coffee over tea!"
+          aria-label="Coffee!"
           hasArrow
         >
           <Text as="span" variant="emphasis">
-            <b>nitty-gritty business logics</b>
+            coffee
           </Text>
         </Tooltip>{' '}
-        and even <b>front end integration</b> stuff now, how time flies!
-        <br /> <br />
-        Here are few technologies that are cup of my{' '}
-        <Tooltip
-          label="I only drink tea if I needed too!"
-          aria-label="I hate Tea!"
-          hasArrow
-        >
-          <Text as="span" variant="emphasis" textDecorationLine="line-through">
-            tea
-          </Text>
-        </Tooltip>{' '}
-        coffee <Icon as={GiCoffeePot} color={emphasis} />.
+        <Icon as={GiCoffeePot} color={emphasis} /> stack:
       </Text>
 
       <SimpleGrid columns={2} spacing={4}>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDotNet} color={emphasis} fontSize="2em" />
-            C# - .NET.Core
+            <ListIcon as={SiJava} color={emphasis} fontSize="2em" />
+            Java & Spring Boot
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiJavascript} color={emphasis} fontSize="2em" />
-            Javascript (ES6+)
+            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
+            GraphQL
           </ListItem>
-          <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiTypescript} color={emphasis} fontSize="2em" />
-            Typescript
-          </ListItem>
-
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiNodeDotJs} color={emphasis} fontSize="2em" />
-            Node
+            Node.js
+          </ListItem>
+          <ListItem fontSize="small" display="flex" alignItems="center">
+            <ListIcon as={SiPostgresql} color={emphasis} fontSize="2em" />
+            PostgreSQL
           </ListItem>
         </List>
         <List spacing={3}>
-          <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
-            Graphql
-          </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
             React
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiNextDotJs} color={emphasis} fontSize="2em" />
-            NextJS
+            Next.js
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiDocker} color={emphasis} fontSize="2em" />
             Docker
+          </ListItem>
+          <ListItem fontSize="small" display="flex" alignItems="center">
+            <ListIcon as={SiBt} color={emphasis} fontSize="2em" />
+            BERT for NLP
           </ListItem>
         </List>
         <Box>
@@ -124,7 +113,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             textAlign="left"
             onClick={onOpen}
           >
-            See my full arsenal <Icon as={IoMdOpen} />
+            See my full skillset <Icon as={IoMdOpen} />
           </Text>
         </Box>
       </SimpleGrid>
