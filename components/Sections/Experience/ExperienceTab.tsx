@@ -119,6 +119,11 @@ const ExperienceTab = () => {
                   </Text>
                 </Text>
                 <Text fontSize="smaller">{company.duration}</Text>
+                {company.location && ( // Add location below duration
+                  <Text fontSize="smaller" fontStyle="italic" color="gray.500">
+                    {company.location}
+                  </Text>
+                )}
               </Stack>
               <List spacing={3} pt={5}>
                 {company.roles?.map((roleDesc, idx) => (

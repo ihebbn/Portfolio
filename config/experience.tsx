@@ -1,6 +1,6 @@
 import { Link } from '@chakra-ui/react'
 
-export type Company = 'Deloitte' | 'SCG' | 'Blotocol'
+export type Company = 'Deloitte' | 'Confledis' | 'SCG' | 'Blotocol'
 
 export type CompanyDetail = {
   name: string
@@ -9,6 +9,7 @@ export type CompanyDetail = {
   url: string
   position: string
   duration: string
+  location: string
   logo: {
     light: string
     dark?: string
@@ -20,137 +21,189 @@ export const Experiences: {
   [key in Company]: CompanyDetail
 } = {
   Deloitte: {
-    name: 'Deloitte',
-    longName: 'Deloitte Consulthing Phils. Delivery Center',
-    subDetail: 'Consulthing Phils. Delivery Center',
-    url: 'https://www2.deloitte.com/',
-    position: 'Software Engineer Consultant',
-    duration: 'Sep 2021 - Present',
+    name: 'Strategya2Ai',
+    longName: 'Strategya2Ai',
+    subDetail: 'Full-Stack Developer',
+    url: 'https://www.strategya2ai.com/',
+    position: 'Software Engineer',
+    duration: 'Feb 2024 - Oct 2024',
+    location: 'Les Berges du Lac II, Tunisia',
     logo: {
-      light: '/worked_at_logos/deloitte/Deloitte_logo_black.png',
-      dark: '/worked_at_logos/deloitte/Deloitte_logo.png',
+      light: '/worked_at_logos/deloitte/S2ai_logo.png',
+      dark: '/worked_at_logos/deloitte/S2ai_logo.png',
     },
     roles: [
       <>
-       Contributed to the design and development of a comprehensive .NET payment integration project for a client
-       That covered credit card payments and subscription management.
-       Introduced Stripe as a new payment provider within the system architecture.
-       Participated in triaging, fixing and adding new functionalitiesto multiple Azure powered APIs of the same client.
+        Played a pivotal role in developing an enterprise management platform
+        with multiple modules to modernize the company HR and recruitment
+        management tools.
       </>,
       <>
-        Worked as a Sitecore Backend on new{' '}
-        <Link
-          aria-label="Deloitte Digital AU"
-          href="https://www.deloittedigital.com.au/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Deloitte Digital AU Site.
-        </Link>
+        Designed and implemented a robust JWT-based authentication system
+        supporting five distinct user roles, ensuring secure and tailored access
+        while managing permissions effectively.
       </>,
       <>
-        Udergone training for .NET Sitecore 10,
-        Sitecore SXA and different topologies it provides.{' '} and Passed {' '}
-        <Link
-          aria-label="Sitecore 10 .NET Developer Certification"
-          href="/certification/Lawingco-Sitecore 10 NET Developer Cert.pdf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Sitecore 10 .NET Developer Certification.
-        </Link>
+        Led the development of an advanced leave management microservice,
+        automating workflows, reducing errors, and providing real-time insights
+        into leave history.
+      </>,
+      <>
+        Designed and implemented a highly intelligent AI-powered chatbot
+        leveraging Spring AI, revolutionizing administrative workflows by
+        centralizing access to internal company information. This innovative
+        solution provided administrators with instant, personalized, and
+        context-aware assistance, significantly improving operational efficiency
+        and decision-making.
+      </>,
+      <>
+        Engineered Python algorithms for a recruitment management microservice
+        to evaluate CVs and rank candidates based on predefined criteria,
+        enhancing preselection quality and reducing recruitment time.
+      </>,
+      <>
+        Wrote comprehensive unit tests using JUnit and Mockito to ensure code
+        reliability, maintainability, and scalability.
+      </>,
+      <>
+        Served as Scrum Master, effectively managing the team’s workflow,
+        facilitating sprint planning, conducting daily stand-ups, and ensuring
+        smooth project delivery by adhering to Agile methodologies.
       </>,
     ],
   },
-  SCG: {
-    name: 'Scentregroup',
-    longName: 'Scentregroup Limited AU',
-    subDetail: 'via Prosource BPO',
-    url: 'https://www.scentregroup.com/',
-    position: 'Software Engineer',
-    duration: 'Feb 2020 - Sep 2021',
+
+  Confledis: {
+    name: 'Confledis',
+    longName: 'Confledis France',
+    subDetail: 'Full-Stack Developer Intern',
+    url: 'https://confledis.com/',
+    position: 'Full-Stack Developer Intern',
+    duration: 'Aug 2023 - Nov 2023',
+    location: 'Paris, Île-de-France, France (Remote)',
     logo: {
-      light: '/worked_at_logos/scg/SCG_400x400.jpg',
-      dark: '/worked_at_logos/scg/SCG.png',
+      light: '/worked_at_logos/confledis/confledis_logo.png', // Add correct logo path
+      dark: '/worked_at_logos/confledis/confledis_logo.png', // Add correct logo path
     },
     roles: [
       <>
-        Revamping the legacy Partner Portal into a new{' '}
-        <Link
-          aria-label="Westfield Marketing Hub"
-          href="https://partner.scentregroup.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Westfield Marketing Hub
-        </Link>{' '}
-        using NextJS and Typescript. Restructuring the old express app into a
-        newer architectural design approach.
+        Played a key role in the development of &apos;Food&apos; an online food
+        ordering and delivery platform, handling both front-end and back-end
+        development.
       </>,
       <>
-        Created multiple Contentful and Bynder extensions to improve BX process
-        better.
+        Designed and implemented user-friendly interfaces using Ionic and
+        Angular, significantly enhancing the platform’s usability and user
+        experience.
       </>,
       <>
-        Worked on maintaining{' '}
-        <Link
-          variant="primaryLink"
-          href="https://www.westfield.com.au/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Westfield
-        </Link>{' '}
-        main site and Graphql apis written in NodeJS.
+        Developed RESTful APIs to enable efficient order placement for users and
+        offer management for restaurants.
       </>,
       <>
-        Migrating of existing marketing email related tools and batch jobs from
-        Responsys into new platform called Braze.
+        Integrated PayPal as a payment gateway, ensuring secure and smooth
+        transaction processes for customers.
       </>,
       <>
-        Hired at early 2020, first major task was helping with selecting a new
-        marketing vendor that can scale and also enable us to have
-        personalisation as well, selecting{' '}
-        <Link
-          aria-label="Braze"
-          href="https://www.braze.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Braze
-        </Link>{' '}
-        as a result.
+        Configured and optimized a scalable infrastructure on Amazon Web
+        Services (AWS) to handle high traffic and multiple restaurant
+        integrations, leveraging EC2 instances, S3 for storage, and RDS for
+        database management.
+      </>,
+      <>
+        Leveraged Docker and Capacitor for efficient deployment and
+        cross-platform compatibility, ensuring a robust and maintainable system.
+      </>,
+      <>
+        Utilized technologies and tools like Spring Boot, Angular, Ionic,
+        Docker, AWS, PostgreSQL, Payment Gateway (PayPal), GitHub, Jira, and
+        REST APIs to deliver a high-performing and scalable solution.
+      </>,
+    ],
+  },
+
+  SCG: {
+    name: 'Euro Tech Conseil',
+    longName: 'Euro Tech Conseil',
+    subDetail: 'Full stack developer',
+    url: 'https://www.eurotechconseil.com/',
+    position: 'Software Engineer',
+    duration: 'Juin 2023 - Aug 2023',
+    location: 'Tunis, Tunisia',
+    logo: {
+      light: '/worked_at_logos/scg/Etc.png',
+      dark: '/worked_at_logos/scg/Etc.png',
+    },
+    roles: [
+      <>
+        Collaborated in the development of a large-scale human resource
+        management application, focusing on both back-end and front-end to
+        optimize functionality and enhance user experience.
+      </>,
+      <>
+        Spearheaded the design and development of a responsive user interface to
+        manage over 5000 users, leave requests, and accounts, reducing
+        administrative workload by 40%.
+      </>,
+      <>
+        Integrated Keycloak to implement a secure, scalable authentication and
+        authorization system, ensuring seamless user management across the
+        platform.
+      </>,
+      <>
+        Developed back-end functionalities using SpringBoot and built an
+        interactive, user-friendly front-end using Angular.
+      </>,
+      <>
+        Worked closely with cross-functional teams to ensure smooth API
+        integration and secure data handling.
+      </>,
+      <>
+        Leveraged tools such as GitHub, Jenkins, and Jira for efficient source
+        control, continuous integration, and project tracking, ensuring
+        development continuity.
+      </>,
+      <>
+        Utilized technologies and tools including SpringBoot, Angular, Keycloak,
+        REST APIs, Auth2, Jenkins, Jira, and MySQL to deliver a scalable and
+        efficient solution.
       </>,
     ],
   },
   Blotocol: {
-    name: 'Blotocol',
-    longName: 'Blotocol Philippines',
-    subDetail: 'formerly IVP Global Inc.',
+    name: 'Tunisie Telecom',
+    longName: 'Tunisie Telecom',
+    subDetail: 'Intern',
     url: 'https://blotocol.com/',
-    position: 'Senior Software Engineer',
-    duration: 'Nov 2016 - Feb 2020',
+    position: 'Full-Stack Developer Intern',
+    duration: 'Aug 2022 - Sep 2022',
+    location: 'Tunis, Tunisia (On-Site)',
     logo: {
-      light: '/worked_at_logos/ivp/blotocol_logo-dark.png',
-      dark: '/worked_at_logos/ivp/blotocol-logo-white.png',
+      light: '/worked_at_logos/ivp/TT_logo.png',
+      dark: '/worked_at_logos/ivp/TT_logo.png',
     },
     roles: [
       <>
-        Developed a Twitter Raffle Campaign / Contest Bot called Camps with
-        statistics similar to Facebook Ads.
+        Designed and developed a web E-Commerce platform for Tunisia Telecom
+        products, delivering a user-friendly and feature-rich solution.
       </>,
       <>
-        In 2019 got promoted as Senior Software Engineer and worked with Cryto
-        Exchange, Smart Contracts and other APIs using several techs such as
-        NodeJS, .NET Core and React.
+        Implemented back-end functionality using Python and Django to manage
+        server-side operations, ensuring seamless and secure workflows.
       </>,
       <>
-        Create highly scalable Japanese e-commerce sites. Most notable clients
-        were TV Tokyo, Layla EC using .NET.
+        Created a responsive and interactive user interface using HTML,
+        Bootstrap, and JavaScript, enhancing the platform’s usability and
+        engagement.
       </>,
       <>
-        Hired at 2016, Undergone Japanese language training first. Shortly
-        after, worked with in-house .NET MVC Framework called ERS.
+        Streamlined product browsing and purchase workflows to provide customers
+        with a smooth and intuitive shopping experience.
+      </>,
+      <>
+        Leveraged technologies such as Django, REST APIs, OAuth0, payment
+        gateways (Stripe), Elasticsearch, PostgreSQL, and HTTPS encryption to
+        build a secure and scalable platform.
       </>,
     ],
   },
@@ -158,6 +211,7 @@ export const Experiences: {
 
 export const ExperiencesList = [
   Experiences.Deloitte,
+  Experiences.Confledis,
   Experiences.SCG,
   Experiences.Blotocol,
 ]
