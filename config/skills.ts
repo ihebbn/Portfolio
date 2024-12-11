@@ -32,6 +32,8 @@ import {
   SiUnity,
   SiMicrosoft,
   SiElectron,
+  SiSpring,
+  SiAngular,
 } from 'react-icons/si'
 import { BsQuestionSquare } from 'react-icons/bs'
 import { AiOutlineAntDesign } from 'react-icons/ai'
@@ -59,6 +61,11 @@ export const Skills: {
 } = {
   backend: [
     {
+      name: 'Spring Boot',
+      icon: SiSpring,
+    },
+    
+    {
       name: 'C# - .NET.Core',
       icon: SiDotNet,
     },
@@ -66,27 +73,24 @@ export const Skills: {
       name: 'Node',
       icon: SiNodeDotJs,
     },
-    {
+    /* {
       name: 'Javascript (ES6+)',
       icon: SiJavascript,
-    },
+    }, */
+    
     {
-      name: 'Typescript',
-      icon: SiTypescript,
-    },
-    {
-      name: 'Graphql (JS, C#)',
+      name: 'Graphql',
       icon: SiGraphql,
     },
-    {
+    /* {
       name: 'PHP (Wordpress, Slim)',
       icon: SiPhp,
-    },
+    }, */
   ],
   frontend: [
     {
-      name: 'React, RecoilJS',
-      icon: SiReact,
+      name: 'Angular',
+      icon: SiAngular,
     },
     {
       name: 'NextJS',
@@ -100,24 +104,15 @@ export const Skills: {
       name: 'Redux',
       icon: SiRedux,
     },
-    {
-      name: 'VueJS',
-      icon: SiVueDotJs,
-    },
-    {
-      name: 'Ghost',
-      icon: SiGhost,
-    },
+   
+
   ],
   database: [
     {
       name: 'PostgreSQL',
       icon: SiPostgresql,
     },
-    {
-      name: 'MsSQL',
-      icon: SiMicrosoftsqlserver,
-    },
+    
     {
       name: 'MySQL',
       icon: SiMysql,
@@ -130,10 +125,7 @@ export const Skills: {
       name: 'Redis',
       icon: SiRedis,
     },
-    {
-      name: 'SocketIO',
-      icon: SiSocketDotIo,
-    },
+    
     {
       name: 'Google Pubsub',
       icon: SiGooglecloud,
@@ -206,14 +198,8 @@ export const Skills: {
     },
   ],
   mobile: [
-    {
-      name: 'React Native',
-      icon: SiReact,
-    },
-    {
-      name: 'Web PWA',
-      icon: IoLogoPwa,
-    },
+   
+  
   ],
   games: [
     {

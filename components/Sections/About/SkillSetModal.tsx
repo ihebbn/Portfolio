@@ -18,6 +18,19 @@ import {
 } from '@chakra-ui/react'
 import styles from './styles.module.css'
 import { Skill, Skills, splitSkills } from 'config/skills'
+import {
+  SiSymfony,
+  SiDotNet,
+  SiDjango,
+  SiStrapi,
+  SiMongodb,
+  SiBt,
+  SiNpm,
+  SiOpenid,
+  SiDocker,
+  SiJenkins,
+  SiIonic,
+} from 'react-icons/si'
 
 type ISkillSetModal = {
   isOpen: boolean
@@ -70,16 +83,31 @@ const SkillList = ({
     </>
   )
 }
+
 const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
-  const backendCols = splitSkills(Skills.backend)
-  const frontendCols = splitSkills(Skills.frontend)
-  const cicdCols = splitSkills(Skills.cicd)
-  const dataBaseCols = splitSkills(Skills.database)
-  const uiFrameWorkCols = splitSkills(Skills['ui frameworks'])
-  const productivityCols = splitSkills(Skills['productivity boost'])
-  const mobileCols = splitSkills(Skills.mobile)
-  const gameCols = splitSkills(Skills.games)
-  const desktopCols = splitSkills(Skills.desktop)
+  const backendCols = splitSkills((Skills.backend || []).concat([
+    { name: 'Symfony (API Platform)', icon: SiSymfony },
+    { name: 'Django', icon: SiDjango },
+    { name: 'FastAPI', icon: SiStrapi },
+  ]))
+  const frontendCols = splitSkills((Skills.frontend || []).concat([
+  ]))
+  const databaseCols = splitSkills((Skills.database || []).concat([
+  ]))
+  const aiCols = splitSkills((Skills.ai || []).concat([
+    { name: 'BERT', icon: SiBt },
+    { name: 'NLP Models', icon: SiNpm },
+    { name: 'OpenAI API', icon: SiOpenid },
+  ]))
+  const devOpsCols = splitSkills((Skills.devOps || []).concat([
+    { name: 'Docker', icon: SiDocker },
+    { name: 'Jenkins', icon: SiJenkins },
+    { name: 'CI/CD Pipelines', icon: null },
+  ]))
+  const mobileCols = splitSkills((Skills.mobile || []).concat([
+    { name: 'Ionic', icon: SiIonic },
+  ]))
+
   return (
     <Modal
       isOpen={isOpen}
@@ -92,18 +120,17 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
         <ModalHeader>Full Skill Set List</ModalHeader>
         <ModalCloseButton />
         <ModalBody className={styles.skillModal}>
-          <SkillList title="Backend Centric" columns={backendCols} />
-          <SkillList title="Frontend Centric" columns={frontendCols} />
-          <SkillList title="CICD centric" columns={cicdCols} />
-          <SkillList title="Database and Streams" columns={dataBaseCols} />
-          <SkillList title="Ui Frameworks" columns={uiFrameWorkCols} />
+          <SkillList title="Backend Development" columns={backendCols} />
+          <SkillList title="Frontend Development" columns={frontendCols} />
+          <SkillList title="Database Technologies" columns={databaseCols} />
+          <SkillList title="AI & Machine Learning" columns={aiCols} />
+          <SkillList title="DevOps & CI/CD" columns={devOpsCols} />
           <SkillList title="Mobile Development" columns={mobileCols} />
-          <SkillList title="Game Development" columns={gameCols} />
-          <SkillList title="Desktop App" columns={desktopCols} />
-          <SkillList title="Productivity boosts" columns={productivityCols} />
         </ModalBody>
         <ModalFooter>
-          <Text fontSize="x-small">*Some micro frameworks not included </Text>
+          <Text fontSize="x-small">
+            *Some minor tools and frameworks not included
+          </Text>
         </ModalFooter>
       </ModalContent>
     </Modal>

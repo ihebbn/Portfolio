@@ -22,6 +22,7 @@ import {
   SiDocker,
   SiPostgresql,
   SiBt,
+  SiAngular,
 } from 'react-icons/si'
 import { GiCoffeePot } from 'react-icons/gi'
 import { IoMdOpen } from 'react-icons/io'
@@ -88,9 +89,9 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
           </ListItem>
         </List>
         <List spacing={3}>
-          <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
-            React
+        <ListItem fontSize="small" display="flex" alignItems="center">
+            <ListIcon as={SiAngular} color={emphasis} fontSize="2em" />
+            Angular
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiNextDotJs} color={emphasis} fontSize="2em" />
