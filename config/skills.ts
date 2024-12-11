@@ -174,10 +174,7 @@ export const Skills: {
       name: 'Framer Motion',
       icon: SiFramer,
     },
-    {
-      name: 'ChakraUI',
-      icon: BsQuestionSquare,
-    },
+    
   ],
   'productivity boost': [
     {
@@ -188,10 +185,7 @@ export const Skills: {
       name: 'Git',
       icon: SiGit,
     },
-    {
-      name: 'Bash',
-      icon: SiGnubash,
-    },
+    
     {
       name: 'SourceTree',
       icon: FaSourcetree,

@@ -30,7 +30,15 @@ import {
   SiDocker,
   SiJenkins,
   SiIonic,
-} from 'react-icons/si'
+  SiStyledComponents,
+  SiMaterialUi,
+  SiFramer,
+  SiGit,
+  SiVisualstudiocode,
+  AiOutlineAntDesign,
+  FaSourcetree,
+  BsQuestionSquare,
+} from 'react-icons/all'
 
 type ISkillSetModal = {
   isOpen: boolean
@@ -90,9 +98,9 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
     { name: 'Django', icon: SiDjango },
     { name: 'FastAPI', icon: SiStrapi },
   ]))
-  const frontendCols = splitSkills((Skills.frontend || []).concat([
-  ]))
-  const databaseCols = splitSkills((Skills.database || []).concat([
+  const frontendCols = splitSkills((Skills.frontend || []))
+  const databaseCols = splitSkills((Skills.database || []))
+  const uiFrameworkCols = splitSkills((Skills['ui frameworks'] || []).concat([
   ]))
   const aiCols = splitSkills((Skills.ai || []).concat([
     { name: 'BERT', icon: SiBt },
@@ -106,6 +114,8 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
   ]))
   const mobileCols = splitSkills((Skills.mobile || []).concat([
     { name: 'Ionic', icon: SiIonic },
+  ]))
+  const productivityBoostCols = splitSkills((Skills['productivity boost'] || []).concat([
   ]))
 
   return (
@@ -125,7 +135,12 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
           <SkillList title="Database Technologies" columns={databaseCols} />
           <SkillList title="AI & Machine Learning" columns={aiCols} />
           <SkillList title="DevOps & CI/CD" columns={devOpsCols} />
+          <SkillList title="UI Frameworks" columns={uiFrameworkCols} />
           <SkillList title="Mobile Development" columns={mobileCols} />
+          <SkillList
+            title="Productivity & Developer Tools"
+            columns={productivityBoostCols}
+          />
         </ModalBody>
         <ModalFooter>
           <Text fontSize="x-small">
