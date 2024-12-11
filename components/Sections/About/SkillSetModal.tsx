@@ -110,7 +110,7 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
   const devOpsCols = splitSkills((Skills.devOps || []).concat([
     { name: 'Docker', icon: SiDocker },
     { name: 'Jenkins', icon: SiJenkins },
-    { name: 'CI/CD Pipelines', icon: null },
+    { name: 'CI/CD Pipelines', icon: SiJenkins },
   ]))
   const mobileCols = splitSkills((Skills.mobile || []).concat([
     { name: 'Ionic', icon: SiIonic },

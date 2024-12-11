@@ -50,6 +50,9 @@ export type SkillCategory =
   | 'mobile'
   | 'games'
   | 'desktop'
+  | 'ai'
+  | 'devOps'
+
 
 export type Skill = {
   name: string
@@ -190,6 +193,14 @@ export const Skills: {
       name: 'SourceTree',
       icon: FaSourcetree,
     },
+  ],
+  ai: [
+   
+  
+  ],
+  devOps: [
+   
+  
   ],
   mobile: [
    
