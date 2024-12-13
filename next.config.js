@@ -13,10 +13,9 @@ module.exports = {
   reactStrictMode: true,
   output: 'export', // Ensures static export for GitHub Pages
   assetPrefix: assetPrefix,
-  basePath: basePath,
-  images: {
-    unoptimized: true, // Required for Next.js export if you're using <Image>
-  },
+  basePath: process.env.GITHUB_ACTIONS
+  ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}`
+  : '',
   eslint: {
     ignoreDuringBuilds: true, // Suppresses ESLint warnings/errors during builds
   },
