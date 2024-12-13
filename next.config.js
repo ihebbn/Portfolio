@@ -17,11 +17,8 @@ module.exports = {
   images: {
     unoptimized: true, // Required for Next.js export if you're using <Image>
   },
-};
-
-module.exports = {
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, // Suppresses ESLint warnings/errors during builds
   },
 };
 
