@@ -131,8 +131,8 @@ export const Experiences: {
     duration: 'Juin 2023 - Aug 2023',
     location: 'Tunis, Tunisia',
     logo: {
-      light: '/worked_at_logos/scg/Etc.png',
-      dark: '/worked_at_logos/scg/Etc.png',
+      light: './worked_at_logos/scg/Etc.png',
+      dark: './worked_at_logos/scg/Etc.png',
     },
     roles: [
       <>
