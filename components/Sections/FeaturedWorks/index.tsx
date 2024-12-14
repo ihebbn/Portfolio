@@ -45,7 +45,7 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={1}
             title="IntraConnect Pro!"
-            src="/works/tobira/Project2.png"
+            src="./works/tobira/Project2.png"
             description="An integrated enterprise management platform designed to streamline HR and recruitment processes. This platform features advanced leave management, document requests, CV Scoring management modules, and an intelligent AI-powered chatbot for quick access to company data."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://tobira-app-test.netlify.app/"
@@ -59,7 +59,7 @@ const FeaturedWorksSection = () => {
             idx={2}
             title="RSV"
             description="RSV is a smart contract (ERC20) powered reservation system. I am incharge of backend using NET.Core 2.1."
-            src="/works/rsv.webp"
+            src="./works/rsv.webp"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://solution.rsv.ltd/jp"
             isMobile={isMobile}
@@ -71,7 +71,7 @@ const FeaturedWorksSection = () => {
             idx={3}
             title="Esprit University"
             description="Web application for Esprit University, enabling efficient event management, student registration, and academic information handling. Backend powered by Spring Boot and Angular for Front end."
-            src="/works/e.png"
+            src="./works/e.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://dev.agora-school.com"
             objectPosition="right 20%"
@@ -84,7 +84,7 @@ const FeaturedWorksSection = () => {
             idx={4}
             title=" Ecwid EC"
             description="Developed a scalable e-commerce platform as a freelancer to enhance online shopping experiences. Integrated secure payment gateways, real-time order tracking, and a robust product management system. Built using Python (Django) for the backend and React for the frontend, ensuring a seamless and user-friendly interface."
-            src="/works/pr.png"
+            src="./works/pr.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://www.ecwid.com/"
             isMobile={isMobile}
