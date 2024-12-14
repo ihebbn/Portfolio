@@ -45,8 +45,8 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={1}
             title="IntraConnect Pro!"
-            src="./works/tobira/Project2.png"
-            description="An integrated enterprise management platform designed to streamline HR and recruitment processes. This platform features advanced leave management, document requests, CV Scoring management modules, and an intelligent AI-powered chatbot for quick access to company data."
+            src="./works/Project2.png"
+            description="An integrated enterprise management platform. This platform features advanced leave management, document requests, CV Scoring management modules, and an intelligent AI-powered chatbot for quick access to company data."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://tobira-app-test.netlify.app/"
             objectPosition="right 20%"
