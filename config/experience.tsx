@@ -29,8 +29,8 @@ export const Experiences: {
     duration: 'Feb 2024 - Oct 2024',
     location: 'Les Berges du Lac II, Tunisia',
     logo: {
-      light: '/worked_at_logos/deloitte/S2ai_logo.png',
-      dark: '/worked_at_logos/deloitte/S2ai_logo.png',
+      light: './worked_at_logos/deloitte/S2ai_logo.png',
+      dark: './worked_at_logos/deloitte/S2ai_logo.png',
     },
     roles: [
       <>
@@ -82,8 +82,8 @@ export const Experiences: {
     duration: 'Aug 2023 - Nov 2023',
     location: 'Paris, Île-de-France, France (Remote)',
     logo: {
-      light: '/worked_at_logos/confledis/confledis_logo.png', // Add correct logo path
-      dark: '/worked_at_logos/confledis/confledis_logo.png', // Add correct logo path
+      light: './worked_at_logos/confledis/confledis_logo.png', // Add correct logo path
+      dark: './worked_at_logos/confledis/confledis_logo.png', // Add correct logo path
     },
     roles: [
       <>
@@ -179,8 +179,8 @@ export const Experiences: {
     duration: 'Aug 2022 - Sep 2022',
     location: 'Tunis, Tunisia (On-Site)',
     logo: {
-      light: '${basePath}/worked_at_logos/ivp/TT_logo.png',
-      dark: '${basePath}/worked_at_logos/ivp/TT_logo.png',
+      light: './worked_at_logos/ivp/TT_logo.png',
+      dark: './worked_at_logos/ivp/TT_logo.png',
     },
     roles: [
       <>
