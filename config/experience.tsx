@@ -179,8 +179,8 @@ export const Experiences: {
     duration: 'Aug 2022 - Sep 2022',
     location: 'Tunis, Tunisia (On-Site)',
     logo: {
-      light: '${basePath/worked_at_logos/ivp/TT_logo.png',
-      dark: '${basePath/worked_at_logos/ivp/TT_logo.png',
+      light: '${basePath}/worked_at_logos/ivp/TT_logo.png',
+      dark: '${basePath}/worked_at_logos/ivp/TT_logo.png',
     },
     roles: [
       <>
