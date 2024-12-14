@@ -73,7 +73,7 @@ const FeaturedWorksSection = () => {
             description="Web application for Esprit University, enabling efficient event management, student registration, and academic information handling. Backend powered by Spring Boot and Angular for Front end."
             src="./works/e.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://dev.agora-school.com"
+            ctaUrl="https://esprit.tn/"
             objectPosition="right 20%"
             isMobile={isMobile}
           />
