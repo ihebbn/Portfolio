@@ -48,7 +48,7 @@ const FeaturedWorksSection = () => {
             src="./works/s2ai.png"
             description="An integrated enterprise management platform. This platform features advanced leave management, document requests, CV Scoring management modules, and an intelligent AI-powered chatbot for quick access to company data."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://intraconnect-pro.com"
+            ctaUrl="https://drive.google.com/file/d/1Y1R0NNMhK-NznsBuge0kcIMQLR280ryz/view"
             objectPosition="right 20%"
             isMobile={isMobile}
           />

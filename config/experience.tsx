@@ -23,11 +23,11 @@ export const Experiences: {
   Deloitte: {
     name: 'Strategya2Ai',
     longName: 'Strategya2Ai',
-    subDetail: 'Full-Stack Developer',
+    //subDetail: 'Full-Stack Developer',
     url: 'https://www.strategya2ai.com/',
     position: 'Software Engineer',
     duration: 'Feb 2024 - Oct 2024',
-    location: 'Les Berges du Lac II, Tunisia',
+    location: 'Lac II, Tunisia',
     logo: {
       light: './worked_at_logos/deloitte/S2ai_logo.png',
       dark: './worked_at_logos/deloitte/S2ai_logo.png',
@@ -76,7 +76,7 @@ export const Experiences: {
   Confledis: {
     name: 'Confledis',
     longName: 'Confledis France',
-    subDetail: 'Full-Stack Developer Intern',
+    //subDetail: 'Full-Stack Developer Intern',
     url: 'https://confledis.com/',
     position: 'Full-Stack Developer Intern',
     duration: 'Aug 2023 - Nov 2023',
@@ -125,7 +125,7 @@ export const Experiences: {
   SCG: {
     name: 'Euro Tech Conseil',
     longName: 'Euro Tech Conseil',
-    subDetail: 'Full stack developer',
+    //subDetail: 'Full stack developer',
     url: 'https://www.eurotechconseil.com/',
     position: 'Software Engineer',
     duration: 'Juin 2023 - Aug 2023',
@@ -173,7 +173,7 @@ export const Experiences: {
   Blotocol: {
     name: 'Tunisie Telecom',
     longName: 'Tunisie Telecom',
-    subDetail: 'Intern',
+    //subDetail: 'Intern',
     url: 'https://blotocol.com/',
     position: 'Full-Stack Developer Intern',
     duration: 'Aug 2022 - Sep 2022',
