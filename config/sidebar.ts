@@ -37,11 +37,11 @@ export const SocialMedias: SocialMedia[] = [
     href: 'https://github.com/ihebbn/',
     icon: FaGithub,
   },
-  {
+  /* {
     label: 'Youtube',
     href: 'https://www.youtube.com/@djmok734',
     icon: FaYoutube,
-  },
+  }, */
   {
     label: 'Dev.to',
     href: 'https://dev.to/',
