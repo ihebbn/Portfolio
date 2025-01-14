@@ -46,7 +46,7 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={1}
             title="IMAGINIFY"
-            src="./works/imag.PNG"
+            src="./works/ff.PNG"
             description="An AI-SaaS platform for image editing with features like restoration, recoloring, object removal, advanced image fill, AI-driven image search and credit-based payments. Built with Next.js, TypeScript, and MongoDB, it ensures seamless performance and an intuitive user experience."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://still-not-hosted.com"
