@@ -44,7 +44,7 @@ const FeaturedWorksSection = () => {
 
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
-            idx={2}
+            idx={1}
             title="IMAGINIFY"
             description="An AI-SaaS platform for image editing with features like restoration, recoloring, object removal, advanced image fill, AI-driven image search and credit-based payments. Built with Next.js, TypeScript, and MongoDB, it ensures seamless performance and an intuitive user experience."
             src="./works/ff.PNG"
@@ -53,10 +53,10 @@ const FeaturedWorksSection = () => {
             isMobile={isMobile}
           />
         </MotionGridItem>
-        
+
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
-            idx={1}
+            idx={2}
             title="IntraConnect Pro!"
             src="./works/s2ai.png"
             description="An integrated enterprise management platform. This platform features advanced leave management, document requests, CV Scoring management modules, and an intelligent AI-powered chatbot for quick access to company data."
@@ -69,7 +69,7 @@ const FeaturedWorksSection = () => {
 
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
-            idx={2}
+            idx={3}
             title="RSV"
             description="RSV is a smart contract (ERC20) powered reservation system. I am incharge of backend using NET.Core 2.1."
             src="./works/rsv.webp"
@@ -81,7 +81,7 @@ const FeaturedWorksSection = () => {
 
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
-            idx={3}
+            idx={4}
             title="Esprit University"
             description="Web application for Esprit University, enabling efficient event management, student registration, and academic information handling. Backend powered by Spring Boot and Angular for Front end."
             src="./works/e.png"
@@ -94,7 +94,7 @@ const FeaturedWorksSection = () => {
 
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
-            idx={4}
+            idx={5}
             title=" Ecwid EC"
             description="Developed a scalable e-commerce platform as a freelancer to enhance online shopping experiences. Integrated secure payment gateways, real-time order tracking, and a robust product management system. Built using Python (Django) for the backend and React for the frontend, ensuring a seamless and user-friendly interface."
             src="./works/pr.png"
