@@ -41,6 +41,19 @@ const FeaturedWorksSection = () => {
         gap={{ base: 5, md: 6 }}
         variants={galleryStagger}
       >
+
+        <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
+          <FeaturedCard
+            idx={1}
+            title="IMAGINIFY - AI SaaS Platform"
+            src="./works/imag.png"
+            description="An AI-powered platform for image editing with features like restoration, recoloring, object removal, advanced image fill, AI-driven image search and credit-based payments. Built with Next.js, TypeScript, and MongoDB, it ensures seamless performance and an intuitive user experience."
+            height={{ base: '130px', md: '225px', '2xl': '300px' }}
+            ctaUrl="https://still-not-hosted.com"
+            objectPosition="right 20%"
+            isMobile={isMobile}
+          />
+        </MotionGridItem>
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={1}
