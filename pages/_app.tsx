@@ -7,7 +7,7 @@ import FavIconProvider from "components/Misc/FavIconProvider";
 import Script from "next/script";
 
 function KLSite({ Component, pageProps }: AppProps): JSX.Element {
-  const GA_ID = process.env.NEXT_PUBLIC_ANALYTICS_ID;
+  const GA_ID = "G-322R2K77NP";
 
   return (
     <AnimatePresence exitBeforeEnter>
