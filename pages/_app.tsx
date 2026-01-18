@@ -7,31 +7,33 @@ import FavIconProvider from "components/Misc/FavIconProvider";
 import Script from "next/script";
 
 function KLSite({ Component, pageProps }: AppProps): JSX.Element {
-  const GA_ID = "G-322R2K77NP";
+  const GA_ID = process.env.NEXT_PUBLIC_ANALYTICS_ID;
 
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence mode="wait">
       <ChakraProvider theme={theme}>
         <FavIconProvider>
-          {/* Google Analytics (GA4) */}
-          {GA_ID && (
-            <>
-              <Script
-                src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-                strategy="afterInteractive"
-              />
-              <Script id="ga4" strategy="afterInteractive">
-                {`
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${GA_ID}', { send_page_view: true });
-                `}
-              </Script>
-            </>
-          )}
+          <>
+            {/* Google Analytics (GA4) */}
+            {GA_ID && (
+              <>
+                <Script
+                  src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+                  strategy="afterInteractive"
+                />
+                <Script id="ga4" strategy="afterInteractive">
+                  {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${GA_ID}');
+                  `}
+                </Script>
+              </>
+            )}
 
-          <Component {...pageProps} />
+            <Component {...pageProps} />
+          </>
         </FavIconProvider>
       </ChakraProvider>
     </AnimatePresence>
