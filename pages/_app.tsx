@@ -10,7 +10,7 @@ function KLSite({ Component, pageProps }: AppProps): JSX.Element {
   const GA_ID = process.env.NEXT_PUBLIC_ANALYTICS_ID;
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence exitBeforeEnter>
       <ChakraProvider theme={theme}>
         <FavIconProvider>
           <>
